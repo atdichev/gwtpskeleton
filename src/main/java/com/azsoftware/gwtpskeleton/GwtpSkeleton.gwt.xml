@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='GwtpSkeleton'>
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
+
+    <extend-configuration-property name="gin.ginjector.modules"
+                                   value="com.azsoftware.gwtpskeleton.client.gin.ClientModule"/>
+
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'/>
+    <source path='shared'/>
+
+    <set-configuration-property name="CssResource.enableGss" value="true"/>
+</module>
