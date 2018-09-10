@@ -1,13 +1,26 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
 
     <ui:with field="res" type="com.azsoftware.gwtpskeleton.client.resources.AppResources"/>
-     <ui:with field="nameTokens" type="com.azsoftware.gwtpskeleton.client.place.NameTokens"/>
+    <ui:with field="nameTokens" type="com.azsoftware.gwtpskeleton.client.place.NameTokens"/>
 
-    <g:HTMLPanel>
-       <g:Hyperlink targetHistoryToken="{nameTokens.getHome}">home</g:Hyperlink>
-       <g:Hyperlink targetHistoryToken="{nameTokens.getTest}">test</g:Hyperlink>
+    <g:ScrollPanel>
+      <b:Container>
+        <b:Navbar position="FIXED_TOP">
+            <b:Container>
+              <b:NavbarHeader>
+                  <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">Home</b:NavbarBrand>
+                  <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
+                  <b:NavbarNav>
+                    <b:AnchorListItem text="Test" targetHistoryToken="{nameTokens.getTest}"/>
+                  </b:NavbarNav>
+              </b:NavbarHeader>
+            </b:Container>
+        </b:Navbar>
 
-       <g:SimplePanel ui:field="main"/>
-    </g:HTMLPanel>
+        <g:SimplePanel ui:field="main"/>
+      </b:Container>
+    </g:ScrollPanel>
+
 </ui:UiBinder>

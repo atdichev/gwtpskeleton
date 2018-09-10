@@ -119,7 +119,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Google App Engine API -->
+        <!-- https://mvnrepository.com/artifact/org.gwtbootstrap3/gwtbootstrap3 -->
+        <dependency>
+            <groupId>org.gwtbootstrap3</groupId>
+            <artifactId>gwtbootstrap3</artifactId>
+            <version>0.9.4</version>
+        </dependency>
 
         <!-- DI -->
         <dependency>

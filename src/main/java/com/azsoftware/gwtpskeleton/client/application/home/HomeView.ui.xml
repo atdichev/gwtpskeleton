@@ -2,8 +2,10 @@
         xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
     <g:HTMLPanel>
-        
-        <p>Hello world!</p>
-        
+        <p>1 Hello world!</p>
+        <p>2 Hello world!</p>
+        <p>3 Hello world!</p>
+        <p>4 Hello world!</p>
+        <p>5 Hello world!</p>
     </g:HTMLPanel>
 </ui:UiBinder>
